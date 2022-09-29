@@ -69,6 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:gravity="center"
             >
 
             <Button
@@ -78,7 +79,7 @@
                 android:text="@string/sumar"
                 android:textColor="@color/black"
                 app:backgroundTint="@color/gray"
-                android:layout_margin="16dp"
+                android:layout_margin="5dp"
                 android:textSize="12dp"
                 android:textStyle="bold" />
 
@@ -89,7 +90,7 @@
                 android:text="@string/restar"
                 android:textColor="@color/black"
                 app:backgroundTint="@color/gray"
-                android:layout_margin="16dp"
+                android:layout_margin="5dp"
                 android:textSize="12dp"
                 android:textStyle="bold" />
 
@@ -97,7 +98,7 @@
                 android:id="@+id/btn_Multiplicar"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="5dp"
                 android:text="@string/multiplicar"
                 android:textColor="@color/black"
                 app:backgroundTint="@color/gray"
@@ -108,7 +109,7 @@
                 android:id="@+id/btn_Didivir"
                 android:layout_width="85dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="16dp"
+                android:layout_margin="5dp"
                 android:text="@string/dividir"
                 android:textColor="@color/black"
                 app:backgroundTint="@color/gray"

@@ -1,0 +1,15 @@
+<resources>
+    <string name="number_1">Number 1</string>
+    <string name="number_2">Number 2</string>
+    <string name="enter_number1">Enter your first number: </string>
+    <string name="enter_number2">Enter your second number: </string>
+    <string name="add">ADD </string>
+    <string name="substract">SUBSTRACT </string>
+    <string name="multiply">MULTI </string>
+    <string name="divide">SPLIT </string>
+    <string name="answer">The result of the operation is: </string>
+
+
+
+
+</resources>

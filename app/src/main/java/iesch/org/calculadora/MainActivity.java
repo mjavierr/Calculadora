@@ -16,10 +16,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
+        setContentView(R.layout.activity_main);
+     //   ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
 
-        //  ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
-        // setContentView(binding.getRoot());
+        //ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
+         //setContentView(binding.getRoot());
 
 
         // sin binding porque no me funciona
@@ -42,14 +43,14 @@ public class MainActivity extends AppCompatActivity {
                 int num2 = Integer.parseInt(editNum2.getText().toString());
 
                 int resultado = num1 + num2;
-                //result.setText(Integer.toString(resultado));
-                Toast.makeText(this, "El resultado es", Toast.LENGTH_SHORT).show();
+                result.setText(Integer.toString(resultado));
+
             } else {
                 Toast.makeText(MainActivity.this, "No puedes dejar un campo vacio", Toast.LENGTH_SHORT).show();
             }
         });
 
-      /*  btnRestar.setOnClickListener(v -> {
+        btnRestar.setOnClickListener(v -> {
 
             if (!editNum1.getText().toString().isEmpty() && !editNum2.getText().toString().isEmpty()) {
 
@@ -91,6 +92,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(MainActivity.this, "No puedes dejar un campo vacio", Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
     }
 }

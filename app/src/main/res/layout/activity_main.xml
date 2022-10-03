@@ -67,6 +67,7 @@
 
 
         <LinearLayout
+            android:id="@+id/botones"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
@@ -131,7 +132,7 @@
         <TextView
             android:id="@+id/respuesta_TextView"
             android:layout_width="match_parent"
-            android:layout_height="39dp"
+            android:layout_height="76dp"
             android:gravity="center_horizontal"
             android:textSize="20dp" />
 

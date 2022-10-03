@@ -1,6 +1,7 @@
 package iesch.org.calculadora;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -17,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         //ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
 
-      //  ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
-       // setContentView(binding.getRoot());
+        //  ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater()); // inflate carga lista de elementos
+        // setContentView(binding.getRoot());
 
 
         // sin binding porque no me funciona
@@ -33,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnDivi = findViewById(R.id.btn_Didivir);
 
 
-        btnSumar.setOnClickListener(view -> {
+        btnSumar.setOnClickListener(v -> {
 
             if (!editNum1.getText().toString().isEmpty() && !editNum2.getText().toString().isEmpty()) {
 
@@ -41,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
                 int num2 = Integer.parseInt(editNum2.getText().toString());
 
                 int resultado = num1 + num2;
-                result.setText(Integer.toString(resultado));
-
+                //result.setText(Integer.toString(resultado));
+                Toast.makeText(this, "El resultado es", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(MainActivity.this, "No puedes dejar un campo vacio", Toast.LENGTH_SHORT).show();
             }
         });
 
-        btnRestar.setOnClickListener(view -> {
+      /*  btnRestar.setOnClickListener(v -> {
 
             if (!editNum1.getText().toString().isEmpty() && !editNum2.getText().toString().isEmpty()) {
 
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "No puedes dejar un campo vacio", Toast.LENGTH_SHORT).show();
             }
         });
-        btnMulti.setOnClickListener(view -> {
+        btnMulti.setOnClickListener(v -> {
 
             if (!editNum1.getText().toString().isEmpty() && !editNum2.getText().toString().isEmpty()) {
 
@@ -76,7 +77,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "No puedes dejar un campo vacio", Toast.LENGTH_SHORT).show();
             }
         });
-        btnDivi.setOnClickListener(view -> {
+
+        btnDivi.setOnClickListener(v -> {
 
             if (!editNum1.getText().toString().isEmpty() && !editNum2.getText().toString().isEmpty()) {
 
@@ -89,6 +91,6 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 Toast.makeText(MainActivity.this, "No puedes dejar un campo vacio", Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
     }
 }

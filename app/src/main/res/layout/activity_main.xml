@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context=".MainActivity"
-        android:background="@color/teal_700">
+        android:background="@drawable/gta">
 
         <TextView
             android:layout_width="match_parent"
@@ -21,6 +21,7 @@
 
            Calculadora"
             android:textSize="30dp"
+            android:textStyle="bold"
             android:padding="16dp"
             />
 
@@ -36,7 +37,8 @@
             android:layout_height="wrap_content"
             android:text="@string/intro_numero1"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
             android:padding="16dp" />
 
         <EditText
@@ -52,11 +54,13 @@
             android:layout_height="wrap_content"
             android:text="@string/intro_numero2"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
             android:padding="16dp" />
 
         <EditText
             android:id="@+id/numero2_edit"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/numero_2"
